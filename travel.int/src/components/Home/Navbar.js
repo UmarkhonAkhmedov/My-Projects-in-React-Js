@@ -61,7 +61,7 @@ const NavList = styled.ul`
     top: -10px;
     right: -10px;
     width: 70%;
-    height: 90%;
+    height: 110%;
     flex-direction: column;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     z-index: 10;
