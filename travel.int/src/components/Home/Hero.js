@@ -8,7 +8,38 @@ function Hero() {
         <h5>Travel.int is all you need</h5>
         <h1>Explore The World</h1>
       </HeroText>
+      <HeroInput>
+        <InputLocation>
+          <span>
+            <img src="/images/Home/hero__icon--location.svg"/>
+            <h3>Location</h3>
+          </span>
+          <input type="search" placeholder="Where do you want to go?"/>
+        </InputLocation>
+        <InputDate>
+          <span>
+            <img src="/images/Home/hero__icon-date.svg"/>
+            <h3>Date</h3>
+          </span>
+          <input type="date" placeholder="Choose date"/>
+        </InputDate>
+        <InputPeople>
+          <span>
+            <img src="/images/Home/hero__icon--location.svg"/>
+            <h3>People</h3>
+          </span>
+          <div>
+            <span>-</span>
+            <h5>Add people</h5>
+            <span>+</span>
+          </div>
+        </InputPeople>
+        <InputSearch href="#">
+          <img src="/images/Home/hero__icon--search.svg"/>
+          </InputSearch>
+      </HeroInput>
     </Container>
+  
   )
 }
 
@@ -16,6 +47,7 @@ export default Hero
 
 const Container = styled.div`
   padding: 0 170px;
+  position: relative;
 
   @media screen and (max-width: 1024px){
     padding: 0 40px;
@@ -68,3 +100,79 @@ const HeroText = styled.div`
   }
   
 `
+const HeroInput = styled.div`
+  position: absolute;
+  top: 420px;
+  left: calc(50% - 352px);
+  display: flex;
+  align-items: flex-start ;
+  justify-content: space-between;
+  background-color: rgba(185, 255, 255, 90%);
+  border-radius: 32px;
+  width: 700px;
+  padding: 25px;
+`
+
+const InputLocation = styled.div`
+  
+  > span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    > img {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      margin-right: 10px;
+      padding: 5px;
+      background-color: #D6DFFF;
+    }
+
+    > h3 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+  > input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 20px;
+
+    &::placeholder {
+      color: #AEAEAE;
+      font-size: 12px;
+    }
+  }
+`
+
+const InputDate = styled(InputLocation)`
+  > input {
+    color: #AEAEAE;
+  }
+`
+
+const InputPeople = styled(InputLocation)`
+  
+  > div {
+    display: flex;
+    align-items: center;
+
+    > h5 {
+      margin: 0px 10px;
+      color: #AEAEAE;
+    }
+    > span {
+      transform: scale(1.5);
+      color: #AEAEAE;
+    }
+  }
+`
+
+const InputSearch = styled.div` 
+  margin-top: 5px;
+  background-color: #3075C6;
+  padding: 15px 25px;
+`
+
