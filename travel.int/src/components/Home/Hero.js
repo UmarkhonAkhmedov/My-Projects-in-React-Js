@@ -120,11 +120,15 @@ const HeroInput = styled.div`
   display: flex;
   align-items: flex-start ;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 100%);
+  background-color: rgba(255, 255, 255, 95%);
   border-radius: 32px;
   width: 700px;
   padding: 25px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+  @media screen and (max-width: 1300px){
+    top: 350px
+  }
 
   @media screen and (max-width: 768px){
     top: 350px;
