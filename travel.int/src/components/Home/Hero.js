@@ -2,19 +2,15 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 function Hero() {
-  const [person, SetPerson] = useState("Add people");
-  let count = 0;
+  const [person, setPerson] = useState(0);
 
   const plusClick = () => {
-    count++;
-    SetPerson(count);
+    setPerson(person+1)
+
   }
   const minusClick = () => {
-    if(count <= 0){
-      SetPerson("0")
-    } else {
-      count--;
-      SetPerson(count);
+    if(person > 0){
+      setPerson(person-1)
     }
   }
   
@@ -47,7 +43,7 @@ function Hero() {
           </span>
           <div>
             <span onClick={minusClick}>-</span>
-            <h5>{person}</h5>
+            <h5>{person === 0 ? "Add Person" : person}</h5>
             <span onClick={plusClick}>+</span>
           </div>
         </InputPeople>
