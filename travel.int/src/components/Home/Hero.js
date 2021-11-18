@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 function Hero() {
+  const [person, SetPerson] = useState("Add people");
+  let count = 0;
+
+  const plusClick = () => {
+    count++;
+    SetPerson(count);
+  }
+  const minusClick = () => {
+    if(count <= 0){
+      SetPerson("0")
+    } else {
+      count--;
+      SetPerson(count);
+    }
+  }
+  
+
   return (
     <Container className="container">
       <HeroText>
@@ -29,9 +46,9 @@ function Hero() {
             <h3>People</h3>
           </span>
           <div>
-            <span>-</span>
-            <h5>Add people</h5>
-            <span>+</span>
+            <span onClick={minusClick}>-</span>
+            <h5>{person}</h5>
+            <span onClick={plusClick}>+</span>
           </div>
         </InputPeople>
         <InputSearch href="#">
@@ -46,7 +63,7 @@ function Hero() {
 export default Hero
 
 const Container = styled.div`
-  padding: 0 170px;
+  padding: 0 150px;
   position: relative;
 
   @media screen and (max-width: 1024px){
@@ -107,10 +124,27 @@ const HeroInput = styled.div`
   display: flex;
   align-items: flex-start ;
   justify-content: space-between;
-  background-color: rgba(185, 255, 255, 90%);
+  background-color: rgba(255, 255, 255, 100%);
   border-radius: 32px;
   width: 700px;
   padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+  @media screen and (max-width: 768px){
+    top: 350px;
+    left: calc(50% - 175px);
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  @media screen and (max-width: 500px){
+    top: 350px;
+    left: calc(50% - 110px);
+    width: 220px;
+    border-radius: 15px;
+    padding: 10px 15px 10px 20px;
+  }
 `
 
 const InputLocation = styled.div`
@@ -119,6 +153,7 @@ const InputLocation = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    cursor: pointer;
 
     > img {
       width: 22px;
@@ -133,7 +168,11 @@ const InputLocation = styled.div`
       font-size: 22px;
       font-weight: 600;
     }
+    @media screen and (max-width: 500px){
+    margin-bottom: 5px;
   }
+  }
+  
   > input {
     border: none;
     outline: none;
@@ -145,11 +184,22 @@ const InputLocation = styled.div`
       font-size: 12px;
     }
   }
+  @media screen and (max-width: 768px){
+    margin: 0px auto 10px auto;
+
+    > span {
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 500px){
+    margin: 5px 0;
+  }
 `
 
 const InputDate = styled(InputLocation)`
   > input {
     color: #AEAEAE;
+    cursor: pointer;
   }
 `
 
@@ -160,13 +210,25 @@ const InputPeople = styled(InputLocation)`
     align-items: center;
 
     > h5 {
-      margin: 0px 10px;
+      margin: 0px auto;
+      text-align: center;
       color: #AEAEAE;
+      width: 75px;
+      
     }
     > span {
       transform: scale(1.5);
       color: #AEAEAE;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin: 0 10px;
+      &:hover {
+        color: #3075C6;
+      }
     }
+  }
+  @media screen and (max-width: 500px){
+    margin: 10px 0 0 30px;
   }
 `
 
@@ -174,5 +236,15 @@ const InputSearch = styled.div`
   margin-top: 5px;
   background-color: #3075C6;
   padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+
+  &:hover {
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 768px){
+    margin: 10px auto 0 auto;
+  }
 `
 
