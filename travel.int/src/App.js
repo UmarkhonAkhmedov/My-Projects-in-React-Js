@@ -1,8 +1,8 @@
 import './App.css';
-import Navbar from './components/Home/Navbar';
-import Hero from './components/Home/Hero'
-import PopularSearch from './components/Home/PopularSearch';
-import Category from './components/Home/Category';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero'
+import PopularSearch from './components/PopularSearch';
+import Category from './components/Category';
 
 
 function App() {

@@ -11,6 +11,8 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  max-width: 1336px;
+  margin: 0 auto;
 }
 
 a {
