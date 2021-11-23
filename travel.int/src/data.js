@@ -1,4 +1,4 @@
-ToursElements = [
+ const ToursElements = [
   {
     id: 1,
     img: "grand",
@@ -65,3 +65,4 @@ ToursElements = [
   },
   
 ]
+export default ToursElements;
