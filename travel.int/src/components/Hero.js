@@ -70,6 +70,7 @@ const Container = styled.div`
 const HeroText = styled.div`
   width: 100%;
   height: 70vh;
+  max-height: 500px;
   padding-bottom: 400px;
   background-image: 
   url('/images/Home/hero__background--main.svg'),
