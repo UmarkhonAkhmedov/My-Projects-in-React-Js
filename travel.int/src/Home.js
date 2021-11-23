@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import PopularSearch from './components/PopularSearch';
 import Category from './components/Category';
 import Features from './components/Features';
+import TopTours from './components/TopTours';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <PopularSearch/>
       <Category/>
       <Features/>
+      <TopTours/>
     </>
 
   );
