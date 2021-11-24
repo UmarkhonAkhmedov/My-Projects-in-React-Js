@@ -22,6 +22,9 @@ function TourItem({id, img, heading, text, locationPlace, dollarNum}){
           </span>
         </span>
       </div>
+      <div className="book__trip">
+        <a>Book Trip Now <img src="/images/Home/tour__icon--arrow.svg"/></a>
+      </div>
     </TourContentElement>
   )
 }
@@ -83,28 +86,40 @@ const TourContent = styled.div`
   }
 `
 const TourContentElement = styled.div`
+  position: relative;
   width: 22.5%;
   background-color: white;
   border-radius: 25px;
-  padding: 17px 20px 10px 20px;
+  padding: 17px 20px 40px 20px;
   box-shadow: 0px 4px 45px -15px rgba(0, 0, 0, 0.15);
-  margin: 0 auto 42px auto;
+  margin: 0 auto 70px auto;
+  transition: all 0.5s ease;
+  cursor: pointer;
 
+  &:hover {
+    transform: scale(1.1);
+
+    .book__trip {
+      display: flex;
+    }
+  }
   @media (max-width: 1024px){
     width: 29%;
-    margin: 0 10px 30px 10px;
+    margin: 0 auto 70px auto;
+    padding: 17px 20px 20px 20px;
   }
   @media (max-width: 768px){
     width: 40%;
-    margin: 0 10px 30px 10px;
+    margin: 0 auto 70px auto;
+    padding: 17px 20px 20px 20px;
   }
   @media (max-width: 650px){
     width: 45%;
-    margin: 0 10px 30px 10px;
+    margin: 0 auto 70px auto;
   }
   @media (max-width: 500px){
     width: 90%;
-    margin: 0 10px 30px 10px;
+    margin: 0 auto 70px auto;
   }
 
   .main__image {
@@ -181,6 +196,33 @@ const TourContentElement = styled.div`
           font-size: 12px;
           color: #AEAEAE;
         }
+      }
+    }
+  }
+  .book__trip {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #3075C6;
+    width: 100%;
+    transform: translateX(-20px);
+    padding: 15px 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: white;
+      img {
+        margin-left: 10px;
       }
     }
   }

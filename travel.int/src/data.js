@@ -28,7 +28,7 @@
     img: "mountain",
     heading: "Snow Hills",
     text: "Great skiing opportunity with a beautiful view",
-    locationPlace: "Carpati., Ukraine",
+    locationPlace: "Carpati., Uk",
     dollarNum: "75"
   },
   {
@@ -44,7 +44,7 @@
     img: "forest",
     heading: "Snow Forest",
     text: "Taste the cold and beauty of the Russian forest in winter",
-    locationPlace: "Camchatka, Russia",
+    locationPlace: "Cam., Russia",
     dollarNum: "60"
   },
   {
@@ -60,7 +60,7 @@
     img: "ackerman",
     heading: "Aсkerman Fortress",
     text: "The oldest Black Sea fortress with a rich history",
-    locationPlace: "Odes.., Ukraine",
+    locationPlace: "Odes., Uk",
     dollarNum: "40"
   },
   
