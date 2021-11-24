@@ -47,7 +47,7 @@ function TopTours() {
         <p>Much places for your vibes from the world</p>
       </TourHeading>
       <TourList/>
-      <ViewAllTour  href="/category">View All Tours</ViewAllTour>
+      <ViewAllTour href="/category">View All Tours</ViewAllTour>
     </Container>
   )
 }

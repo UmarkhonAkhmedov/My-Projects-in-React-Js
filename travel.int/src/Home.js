@@ -5,6 +5,7 @@ import PopularSearch from './components/PopularSearch';
 import Category from './components/Category';
 import Features from './components/Features';
 import TopTours from './components/TopTours';
+import ScanQr from './components/ScanQr';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Category/>
       <Features/>
       <TopTours/>
+      <ScanQr/>
     </>
 
   );
