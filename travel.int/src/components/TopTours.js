@@ -47,6 +47,7 @@ function TopTours() {
         <p>Much places for your vibes from the world</p>
       </TourHeading>
       <TourList/>
+      <ViewAllTour  href="/category">View All Tours</ViewAllTour>
     </Container>
   )
 }
@@ -81,6 +82,7 @@ const TourContent = styled.div`
   flex-wrap: wrap;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 30px;
   @media (max-width: 1024px){
     justify-content: center;
   }
@@ -225,5 +227,27 @@ const TourContentElement = styled.div`
         margin-left: 10px;
       }
     }
+  }
+`
+const ViewAllTour = styled.a` 
+  display: block;
+  text-align: center;
+  width: 240px;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 17px 50px;
+  background-color: #3075C6;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 420px){
+    font-size: 16px;
+    padding: 12px 30px;
+    width: 170px;
   }
 `
