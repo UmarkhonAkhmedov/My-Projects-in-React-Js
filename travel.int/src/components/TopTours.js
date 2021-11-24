@@ -51,9 +51,9 @@ function TopTours() {
 export default TopTours
 
 const Container = styled.div`
-  max-width: 1164px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 50px 50px 50px;
 `
 const TourHeading = styled.div`
   text-align: center;
@@ -62,6 +62,10 @@ const TourHeading = styled.div`
     font-weight: 700;
     margin-bottom: 20px;
     color: #313131; 
+    
+    @media (max-width: 500px){
+      font-size: 32px;
+    }
   }
   p {
     color: #AEAEAE;
@@ -74,20 +78,42 @@ const TourContent = styled.div`
   flex-wrap: wrap;
   width: 100%;
   margin-top: 50px;
+  @media (max-width: 1024px){
+    justify-content: center;
+  }
 `
 const TourContentElement = styled.div`
   width: 22.5%;
   background-color: white;
-  margin-bottom: 42px;
   border-radius: 25px;
   padding: 17px 20px 10px 20px;
   box-shadow: 0px 4px 45px -15px rgba(0, 0, 0, 0.15);
+  margin: 0 auto 42px auto;
+
+  @media (max-width: 1024px){
+    width: 29%;
+    margin: 0 10px 30px 10px;
+  }
+  @media (max-width: 768px){
+    width: 40%;
+    margin: 0 10px 30px 10px;
+  }
+  @media (max-width: 650px){
+    width: 45%;
+    margin: 0 10px 30px 10px;
+  }
+  @media (max-width: 500px){
+    width: 90%;
+    margin: 0 10px 30px 10px;
+  }
 
   .main__image {
     max-width: 220px;
+    margin: 0 auto;
     
     img {
       width: 100%;
+      
     }
   }
   > h4 {
@@ -105,10 +131,16 @@ const TourContentElement = styled.div`
     display: flex;
     align-items: center;
     color: #AEAEAE;
+    @media (max-width: 1024px){
+        flex-wrap: wrap;
+    }
 
     .location {
       display: flex;
       margin-right: 13px;
+      @media (max-width: 1024px){
+        margin: 5px 5px;
+      }
       >img {
         width: 16px;
         height: 16px;
@@ -124,6 +156,9 @@ const TourContentElement = styled.div`
     .price {
       display: flex;
       align-items: center;
+      @media (max-width: 1024px){
+        margin: 5px 5px;
+      }
       
       > img {
         width: 16px;
