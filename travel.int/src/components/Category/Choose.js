@@ -22,15 +22,15 @@ export default Choose
 
 const Container = styled.div`
   padding: 0 140px;
-  margin: 150px 0 20px 0;
+  margin: 100px 0 20px 0;
 
   @media screen and (max-width: 768px){
     padding: 0 40px;
-    margin: 350px 0 20px 0;
+    margin: 100px 0 20px 0;
   }
   @media screen and (max-width: 500px){
     padding: 0 30px;
-    margin: 300px 0 20px 0;
+    margin: 50px 0 0px 0;
   }
 `
 const Header = styled.h3`
@@ -45,6 +45,11 @@ const Header = styled.h3`
 
   @media screen and (max-width: 650px){
     font-size: 28px;
+  }
+  @media screen and (max-width: 450px){
+    flex-wrap: wrap;
+    padding: 0 60px;
+    background-position: left calc(50% + 115px) top 10px, left calc(50% + 125px) top 40px, left calc(50% + 130px) top 25px;
   }
 `
 
