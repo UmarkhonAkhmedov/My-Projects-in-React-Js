@@ -1,9 +1,10 @@
 import './App.css';
+import SecondNavbar from './components/Category/SecondNavbar'
 
 function Category() {
   return (
     <>
-      Ok
+      <SecondNavbar/>
     </>
 
   );

@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero'
-import PopularSearch from './components/PopularSearch';
-import Category from './components/Category';
-import Features from './components/Features';
-import TopTours from './components/TopTours';
-import ScanQr from './components/ScanQr';
-import Footer from './components/Footer';
+import Navbar from './components/Home/Navbar';
+import Hero from './components/Home/Hero'
+import PopularSearch from './components/Home/PopularSearch';
+import Category from './components/Home/Category';
+import Features from './components/Home/Features';
+import TopTours from './components/Home/TopTours';
+import ScanQr from './components/Home/ScanQr';
+import Footer from './components/Home/Footer';
 
 
 function Home() {

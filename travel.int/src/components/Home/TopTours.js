@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ToursElements from '../data'
+import ToursElements from '../../data'
 
 function TourItem({id, img, heading, text, locationPlace, dollarNum}){
   return(
