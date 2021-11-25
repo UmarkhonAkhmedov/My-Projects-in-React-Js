@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-function Category() {
+function Slide() {
   const imagesList = ['beach', 'mountain', 'desert', 'tower', 'temple', 'forest', 'city']
   const [clicking, setClick] = useState(true)
 
@@ -30,7 +30,7 @@ function Category() {
   )
 }
 
-export default Category
+export default Slide
 
 const Container = styled.div`
   margin: 90px 100px;

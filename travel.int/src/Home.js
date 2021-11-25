@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Home/Navbar';
 import Hero from './components/Home/Hero'
 import PopularSearch from './components/Home/PopularSearch';
-import Category from './components/Home/Category';
+import Slide from './components/Home/Slide';
 import Features from './components/Home/Features';
 import TopTours from './components/Home/TopTours';
 import ScanQr from './components/Home/ScanQr';
@@ -15,7 +15,7 @@ function Home() {
       <Navbar/>
       <Hero/>
       <PopularSearch/>
-      <Category/>
+      <Slide/>
       <Features/>
       <TopTours/>
       <ScanQr/>
