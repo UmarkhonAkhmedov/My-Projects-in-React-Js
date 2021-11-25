@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 function Footer() {
   return (
+    <>
     <Container>
       <FooterLogo>
         <a class="logo"><img src="/images/Home/footer__logo.svg" alt="Website Logo"/></a>
@@ -46,6 +47,10 @@ function Footer() {
         </ul>
       </GetApp>
     </Container>
+    <FooterReserved>
+      2021 (c) — Travelint. All Rights Reserved
+    </FooterReserved>
+    </>
   )
 }
 
@@ -56,7 +61,18 @@ const Container = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   margin: 100px auto 0 auto;
-  padding: 50px 100px 80px 100px;
+  padding: 50px 100px 60px 100px;
+
+  @media screen and (max-width: 950px){
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 70px 50px 70px;
+    margin: 80px auto 0 auto;
+  }
+  @media screen and (max-width: 950px){
+    margin: 50px auto 0 auto;
+    padding: 50px 30px 40px 30px;
+  }
 `
 const FooterLogo = styled.div`
   .logo {
@@ -80,6 +96,22 @@ const FooterLogo = styled.div`
     li {
       margin: 5px;
       cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 950px){
+    margin: 15px;
+  }
+  @media screen and (max-width: 600px){
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+
+    p {
+      margin: 20px auto 20px auto;
+    }
+    ul {
+      margin: 20px auto 0 auto;
+      justify-content: center;
     }
   }
 `
@@ -111,14 +143,27 @@ const Menu = styled.div`
       }
     }
   }
+  @media screen and (max-width: 950px){
+    margin: 15px;
+  }
+  @media screen and (max-width: 600px){
+    width: 40%;
+    margin: 15px auto;
+    transform: translateX(30px)
+  }
+  @media screen and (max-width: 400px){
+    transform: translateX(0px)
+  }
 `
-const BookingPlan = styled(Menu)`
+const BookingPlan = styled(Menu)``
+const Support = styled(Menu)``
+const GetApp = styled(Menu)``
 
-`
-const Support = styled(Menu)`
-
-`
-const GetApp = styled(Menu)`
-
+const FooterReserved = styled.div`
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #AEAEAE;
+  padding-bottom: 14px;
 `
 
