@@ -6,6 +6,8 @@ import Category from './components/Category';
 import Features from './components/Features';
 import TopTours from './components/TopTours';
 import ScanQr from './components/ScanQr';
+import Footer from './components/Footer';
+
 
 function Home() {
   return (
@@ -17,6 +19,7 @@ function Home() {
       <Features/>
       <TopTours/>
       <ScanQr/>
+      <Footer/>
     </>
 
   );
