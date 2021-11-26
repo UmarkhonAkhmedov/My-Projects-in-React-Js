@@ -16,21 +16,21 @@ function Description() {
   return (
     <Container>
       <BackArrow>
-        <img src="/images/Tours/hero__back--arrow.svg"/>
+        <a href="/"><img src="/images/Tours/hero__back--arrow.svg"/></a>
       </BackArrow>
       <HeroImage>
-        <img src="/images/Tours/hero__main--snowForest.png"/>
-        <div>
+        <img class="heroMainImage" src="/images/Tours/hero__main--snowForest.png"/>
+        <div class="heroSubImages">
           <img src="/images/Tours/hero__mountain.png"/>
           <img src="/images/Tours/hero__tree.png"/>
           <img src="/images/Tours/hero__sky.png"/>
         </div>
       </HeroImage>
       <HeroInfo>
-        <h>Snow Forest</h>
+        <h2>Snow Forest</h2>
         <p>Taste the cold and beauty of the Russian forest in winter.</p>
         <p>Taste the cold and beauty of the Russian forest in winter.</p>
-        <span><img src="/images/Tours/hero__location.svg"/>Camchatka, Russia</span>
+        <span class="imageLocation"><img src="/images/Tours/hero__location.svg"/>Camchatka, Russia</span>
         <HeroInput>
           <InputDate>
             <span>
@@ -63,17 +63,63 @@ function Description() {
 export default Description
 
 const Container = styled.div`
-  padding: 50px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  padding: 70px 130px 50px 130px;
+  justify-content: space-between;
 `
 const BackArrow = styled.div`
+  position: absolute;
+  top: 45px;
+  left: 50px;
 
 `
 const HeroImage = styled.div`
+  margin: 0 10px;
 
+  .heroMainImage {
+    border-radius: 25px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    width: 100%;
+  }
+  .heroSubImages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    img {
+      max-width: 190px;
+      width: 32%;
+    }
+  }
 `
 const HeroInfo = styled.div`
+  margin: 0 10px;
 
-`
+  h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px 0 20px 0;
+  }
+  p {
+    color: #AEAEAE;
+    font-size: 18px;
+    max-width: 380px;
+    margin: 0 0 20px 0;
+  }
+  .imageLocation {
+    display: flex;
+    align-items: center;
+    color: #AEAEAE;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+` 
 const HeroInput = styled.div`
   display: flex;
   align-items: flex-start ;
