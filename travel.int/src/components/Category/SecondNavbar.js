@@ -5,7 +5,7 @@ function SecondNavbar() {
   return (
     <Container className="container">
       <NavLogo>
-        <a href="/"><img src="/images/Home/website__logo.svg" alt="Website Logo - Travel-int"/></a>
+        <a href="#"><img src="/images/Home/website__logo.svg" alt="Website Logo - Travel-int"/></a>
       </NavLogo>
       <UserImage>
         <img src="/images/Category/navbar__user.svg"/>
