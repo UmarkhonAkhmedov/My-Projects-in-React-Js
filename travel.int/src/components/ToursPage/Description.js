@@ -77,11 +77,11 @@ const BackArrow = styled.div`
 `
 const HeroImage = styled.div`
   margin: 0 10px;
+  width: 60%;
 
   .heroMainImage {
     border-radius: 25px;
     margin-bottom: 10px;
-    max-width: 600px;
     width: 100%;
   }
   .heroSubImages {
@@ -96,6 +96,7 @@ const HeroImage = styled.div`
 `
 const HeroInfo = styled.div`
   margin: 0 10px;
+  width: 35%;
 
   h2 {
     font-weight: bold;
@@ -126,26 +127,21 @@ const HeroInput = styled.div`
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 95%);
   border-radius: 32px;
-  max-width: 400px;
-  width: 100%;
+  width: 400px;
   padding: 25px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
-  @media screen and (max-width: 1300px){
-    top: 350px
+  @media screen and (max-width: 100px){
   }
 
   @media screen and (max-width: 768px){
-    top: 350px;
-    left: calc(50% - 175px);
     width: 350px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
+
   @media screen and (max-width: 500px){
-    top: 350px;
-    left: calc(50% - 110px);
     width: 220px;
     border-radius: 15px;
     padding: 10px 15px 10px 20px;
