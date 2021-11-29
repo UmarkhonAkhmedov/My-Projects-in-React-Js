@@ -47,9 +47,11 @@ function RecentViewed() {
 export default RecentViewed
 
 const Container = styled.div`
-  width: 1250px;
+  max-width: 1250px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 50px 0px 50px;
+  overflow: hidden;
 `
 const RecentHeading = styled.h3 `
   font-size: 24px;
@@ -74,23 +76,15 @@ const RecentContentElement = styled.div`
   margin-right: 30px;
   transition: all 0.5s ease;
   cursor: pointer;
-
-  @media (max-width: 1024px){
-    width: 25%;
-    margin-right: 30px;
-    padding: 17px 20px 40px 20px;
-  }
-  @media (max-width: 768px){
-    width: 25%;
-    margin-right: 30px;
-    padding: 17px 20px 40px 20px;
+  @media screen and (max-width: 1100px){
+    width: 300px;
   }
   @media (max-width: 650px){
-    width: 25%;
+    width: 250px;
     margin-right: 30px;
   }
   @media (max-width: 500px){
-    width: 25%;
+    width: 300px;
     margin-right: 30px;
   }
 
@@ -99,9 +93,10 @@ const RecentContentElement = styled.div`
     margin: 0 auto;
     
     img {
-      max-width: 300px;
-      width: 100%;
+      max-width: 250px;
       
+    }
+    
     }
   }
   > h4 {

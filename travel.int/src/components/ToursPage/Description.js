@@ -68,16 +68,33 @@ const Container = styled.div`
   display: flex;
   padding: 70px 130px 50px 130px;
   justify-content: space-between;
+
+  @media screen and (max-width: 1250px){
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
+  }
+  @media screen and (max-width: 500px){
+    padding: 0px 15px 0px 15px;
+  }
 `
 const BackArrow = styled.div`
   position: absolute;
   top: 45px;
   left: 50px;
 
+  @media screen and (max-width: 550px){
+    left: 20px;
+    top: 20px;
+    transform: scale(0.7);
+  }
+
 `
 const HeroImage = styled.div`
   margin: 0 10px;
   width: 60%;
+  @media screen and (max-width: 1250px){
+    width: 80%;
+  }
 
   .heroMainImage {
     border-radius: 25px;
@@ -89,7 +106,7 @@ const HeroImage = styled.div`
     justify-content: space-between;
     width: 100%;
     img {
-      max-width: 190px;
+      max-width: 32%;
       width: 32%;
     }
   }
@@ -97,17 +114,34 @@ const HeroImage = styled.div`
 const HeroInfo = styled.div`
   margin: 0 10px;
   width: 35%;
+  @media screen and (max-width: 1250px){
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 50px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
 
   h2 {
     font-weight: bold;
     font-size: 30px;
     margin: 0px 0 20px 0;
+    @media screen and (max-width: 500px){
+      font-size: 24px;
+    }
   }
   p {
     color: #AEAEAE;
     font-size: 18px;
     max-width: 380px;
     margin: 0 0 20px 0;
+    @media screen and (max-width: 1250px){
+      margin: 0 auto 20px auto;
+    }
+    @media screen and (max-width: 500px){
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
   }
   .imageLocation {
     display: flex;
@@ -115,9 +149,16 @@ const HeroInfo = styled.div`
     color: #AEAEAE;
     margin-top: 40px;
     margin-bottom: 40px;
+    @media screen and (max-width: 1250px){
+      justify-content: center;
+    }
 
     img {
       margin-right: 10px;
+    }
+    @media screen and (max-width: 500px){
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 ` 
@@ -131,8 +172,10 @@ const HeroInput = styled.div`
   padding: 25px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
-  @media screen and (max-width: 100px){
-  }
+  @media screen and (max-width: 1250px){
+      margin: 0 auto;
+      width: 400px;
+    }
 
   @media screen and (max-width: 768px){
     width: 350px;
@@ -151,6 +194,10 @@ const HeroInput = styled.div`
     width: 2px;
     background-color: #AEAEAE;
     border-radius: 10px;
+    @media screen and (max-width: 1250px){
+      width: 0;
+      height: 30px;
+    }
   }
 `
 const InputDate = styled.div`
@@ -246,7 +293,15 @@ const InputSubmit = styled.div`
   &:hover {
     opacity: 0.8;
   }
+  @media screen and (max-width: 1250px){
+      margin: 40px auto 0 auto;
+      width: 400px;
+    }
   @media screen and (max-width: 768px){
     margin: 10px auto 0 auto;
+  }
+  @media screen and (max-width: 550px){
+    margin-top: 30px;
+    max-width: 200px;
   }
 `

@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 function Footer() {
+  const today = new Date();
+
   return (
     <>
     <Container>
@@ -48,7 +50,7 @@ function Footer() {
       </GetApp>
     </Container>
     <FooterReserved>
-      2021 (c) — Travelint. All Rights Reserved
+      {today.getFullYear()} (c) — Travelint. All Rights Reserved
     </FooterReserved>
     </>
   )
