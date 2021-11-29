@@ -8,10 +8,10 @@ import TopToursCategory from './components/Category/TopToursCategory';
 function ToursPage() {
   return (
     <>
-      {/* <SecondNavbar/>
-      <Description/> */}
+      <SecondNavbar/>
+      <Description/>
       <TopToursCategory/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
 
   );
