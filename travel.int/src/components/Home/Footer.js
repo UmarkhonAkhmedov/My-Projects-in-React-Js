@@ -17,9 +17,9 @@ function Footer() {
       <Menu>
         <h3>Menu</h3>
         <ul className="footer__lists">
-          <li><a>Home</a></li>
-          <li><a>Tours</a></li>
-          <li><a>Category</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/tours">Tours</a></li>
+          <li><a href="/category">Category</a></li>
           <li><a>About Us</a></li>
         </ul>
       </Menu>

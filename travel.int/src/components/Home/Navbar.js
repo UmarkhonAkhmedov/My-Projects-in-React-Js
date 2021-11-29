@@ -9,10 +9,10 @@ function Navbar() {
         <a href="/"><img src="/images/Home/website__logo.svg" alt="Website Logo - Travel-int"/></a>
       </NavLogo>
       <NavList isOpen={isOpen}>
-        <li><a>Home</a></li>
-        <li><a>Category</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/category">Category</a></li>
         <li><a>About us</a></li>
-        <li><a>Tours</a></li>
+        <li><a href="/tours">Tours</a></li>
         <li><a>Contact</a></li>
       </NavList>
       <NavButtons>
