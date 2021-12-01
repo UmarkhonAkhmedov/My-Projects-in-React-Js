@@ -59,8 +59,15 @@ const Container = styled.div`
   box-sizing: border-box;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 30px 100px 0 100px; 
+  padding: 30px 100px 30px 100px; 
   background-color: #ffffff;
+
+  @media screen and (max-width: 700px){
+    padding: 30px 50px 30px 50px;
+  }
+  @media screen and (max-width: 400px){
+    padding: 30px 30px 30px 30px;
+  }
 `
 const Navbar = styled.nav`
   display: flex;
@@ -71,11 +78,15 @@ const Navbar = styled.nav`
     height: auto;
     cursor: pointer;
     transition: all 0.3s ease;
+    @media screen and (max-width: 500px){
+      width: 70px;
+    }
 
     &:hover {
       opacity: 0.5;
     }
   }
+
 `
 const Language = styled.div`
   display: flex;
@@ -89,9 +100,10 @@ const Language = styled.div`
     font-size: 17px;
     width: 110px;
     font-weight: 500;
-  }
-  img {
-    
+    @media screen and (max-width: 500px){
+      font-size: 15px;
+      width: 100px;
+    }
   }
 
   span {
@@ -112,6 +124,10 @@ const Language = styled.div`
       text-align: center;
       background-color: #8FF1F5;
     }
+    @media screen and (max-width: 500px){
+      top: 30px;
+      right: 15px;
+    }
 
   }
 `
@@ -121,12 +137,24 @@ const MainContent = styled.div`
   justify-content: center;
   margin-top: 70px;
   text-align: center;
-
+  > h2 {
+    @media screen and (max-width: 500px){
+      font-size: 18px;
+      margin-top: 0px;
+    }
+  }
   .signupwith {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+    }
+    @media screen and (max-width: 500px){
+      margin-top: 20px;
+    }
 
 
     a {
@@ -150,6 +178,12 @@ const MainContent = styled.div`
     }
     > a:first-child {
       margin-right: 40px;
+
+      @media screen and (max-width: 600px){
+          margin-right: 0px;
+          margin-bottom: 10px;
+          padding: 10px 25px;
+      }
     }
   }
   > h3 {
@@ -157,6 +191,12 @@ const MainContent = styled.div`
     color: #909090;
     font-weight: 400;
     margin-top: 30px;
+
+    @media screen and (max-width: 500px){
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: -10px;
+    }
   }
   .inputs {
     position: relative;
@@ -222,6 +262,9 @@ const MainContent = styled.div`
       &:hover {
         color: #65B2B6;
       }
+    }
+    @media screen and (max-width: 400px){
+      flex-direction: column;
     }
   }
 `
