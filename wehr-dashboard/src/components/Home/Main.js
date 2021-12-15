@@ -7,6 +7,7 @@ function Main() {
   return (
     <Container>
       <Header/>
+      <BreakLine/>
     
     </Container>
   )
@@ -21,4 +22,11 @@ const Container = styled.div`
   right: 0;
   max-width: 1126px;
   width: 100%;
+`
+const BreakLine = styled.div`
+  display: block;
+  height: 1px;
+  background-color: #F1F1F1;
+  transform: translateX(40px);
+  overflow-x: hidden;
 `

@@ -32,6 +32,7 @@ const Main = styled.div`
   background-color: #FAFAFA;
   padding-left: 25px;
   box-sizing: border-box;
+  border-right: 1px solid #F1F1F1;
 
   .smallHeading {
     font-size: 11px;
