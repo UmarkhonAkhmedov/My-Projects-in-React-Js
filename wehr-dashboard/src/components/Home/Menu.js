@@ -26,7 +26,8 @@ export default Menu
 
 const Main = styled.div`
   position: fixed;
-  width: 220px;
+  max-width: 220px;
+  width: 100%;
   height: 100vh;
   background-color: #FAFAFA;
   padding-left: 25px;

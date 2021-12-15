@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Main from './Main'
 import Menu from './Menu'
 
 function Home() {
@@ -8,6 +8,7 @@ function Home() {
     <>
       <Container>
         <Menu/>
+        <Main/>
       </Container>
     </>
   )
@@ -16,7 +17,7 @@ function Home() {
 export default Home
 
 const Container = styled.div`
-  width: 1366px;
+  display: flex;
   height: 250vh;
   margin: 0 auto;
 `
