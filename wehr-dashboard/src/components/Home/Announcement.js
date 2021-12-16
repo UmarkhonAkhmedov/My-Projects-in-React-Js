@@ -16,12 +16,12 @@ function Announcement() {
       <AnnounceInfo>
         {
           AnnouncementData.map((element) => (
-            <div id={element.id}>
-              <div> 
+            <div className='overall' id={element.id}>
+              <div className='text'> 
                 <h3>{element.text}</h3>
                 <span>{element.time}</span>
               </div>
-              <div>
+              <div className='img'>
                 <img src={element.img} />
                 <img src="/images/Home/dotdot.svg"/>
               </div>
@@ -58,12 +58,71 @@ const Heading = styled.div`
     font-size: 18px;
     margin: 0;
   }
+  select {
+    border: none;
+    outline: none;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    padding: 5px 5px;
+    color: #686868;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+
+    option {
+      font-size: 12px;
+      background-color: #FAFAFA;
+      color: #161E54;
+    }
+  }
 
 `
 const AnnounceInfo = styled.div`
+  
+  .overall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid #E0E0E0;
+    background-color: #FAFAFA;
+    padding: 10px 15px;
+    margin: 6px 0;
+    border-radius: 6px;
 
+    .text {
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #303030;
+      }
+      span {
+        color: #686868;
+        font-size: 11px;
+      }
+    }
+    .img {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      img:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
 `
 const SeeAll = styled.div`
+  border-top: 1px solid #E0E0E0;
+  margin: -7px -20px -7px -20px;
+  text-align: center;
+  padding: 8px 0 3px 0;
+  color: #FF5151;
+  font-size: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
+  &:hover {
+    color: #D00000;
+  }
 `
 
