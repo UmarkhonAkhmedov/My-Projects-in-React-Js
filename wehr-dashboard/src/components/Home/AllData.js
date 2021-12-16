@@ -36,4 +36,30 @@ const MenuData = [
   },
 ]
 
+const AnnouncementData = [
+  {
+    id: 1,
+    text: "Outing schedule for every departement",
+    time: "5 Minutes ago",
+    img: "/images/Home/angleOpacity100.svg"
+  },
+  {
+    id: 2,
+    text: "Meeting HR Department",
+    time: "Yesterday, 12:30 PM",
+    img: "/images/Home/angleOpacity50.svg"
+  },
+  {
+    id: 1,
+    text: "IT Department need two more talents for UX/UI Designer position",
+    time: "Yesterday, 09:15 AM",
+    img: "/images/Home/angleOpacity50.svg"
+  }
+]
+
 export default MenuData;
+
+export {AnnouncementData}
+
+
+

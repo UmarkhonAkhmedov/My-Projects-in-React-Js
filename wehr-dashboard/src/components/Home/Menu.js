@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import MenuData from './MenuData'
+import MenuData from './AllData'
 
 
 function Menu() {
