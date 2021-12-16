@@ -22,7 +22,38 @@ function Information() {
         </div>
       </InfoMain>
       <Total>
-
+        <div className='total worker'>
+          <h4>Total Employees</h4>
+          <h2>216</h2>
+          <div className='bottom'>
+            <span className='gender'>
+              <h5>120 Men</h5>
+              <h5>96 Women</h5>
+            </span>
+            <span className='month'>
+              +2% Past month
+            </span>
+          </div>
+          <div className='increase'>
+            <img src="/images/Home/lineWithWater.svg.png"/>
+          </div>
+        </div>
+        <div className='total request'>
+        <h4>Talent Request</h4>
+          <h2>16</h2>
+          <div className='bottom'>
+            <span className='gender'>
+              <h5>6 Men</h5>
+              <h5>10 Women</h5>
+            </span>
+            <span className='month'>
+              +5% Past month
+            </span>
+          </div>
+          <div className='increase'>
+            <img src="/images/Home/lineWithWater.svg.png"/>
+          </div>
+        </div>
       </Total>
     </Container>
   )
@@ -77,5 +108,62 @@ const InfoMain = styled.div`
 
 `
 const Total = styled.div`
+  display: flex;
+  margin-top: 20px;
 
+  .total {
+    position: relative;
+    width: 310px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    color: #161E54;
+    border: 1px solid #E0E0E0;
+
+    h4 {
+      font-size: 17px;
+      margin: 0 0 0 0;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 44px;
+      font-weight: 500;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+
+      .gender {
+        color: #686868;
+        h5 {
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+      .month {
+        display: inline-block;
+        height: 20px;
+        border-radius: 4px;
+        padding: 3px 8px;
+        background-color: #FFEFE7;
+        margin: 0;
+        color: #303030;
+        font-size: 13px;
+
+      }
+    }
+    .increase {
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      
+      img {
+        width: 100px;
+        height: 50px;
+      }
+    }
+  }
+  .worker {
+    margin-right: 18px;
+  }
 `
