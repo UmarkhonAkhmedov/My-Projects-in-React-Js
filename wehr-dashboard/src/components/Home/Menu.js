@@ -36,6 +36,12 @@ const Main = styled.div`
   @media screen and (max-width: 1024px){
     max-width: 100px;
   }
+  @media screen and (max-width: 500px){
+    display: none;
+    position: absolute;
+    max-width: 0px;
+    width: 0;
+  }
   
 
   .smallHeading {

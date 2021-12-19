@@ -28,6 +28,13 @@ const Container = styled.div`
   @media screen and (max-width: 1024px){
     margin-right: 20px;
   }
+  @media screen and (max-width: 500px){
+    margin-right: 0px;
+    width: 100%;
+  }
+  @media screen and (max-width: 500px){
+    margin-bottom: 20px;
+  }
 
   h3 {
     font-size: 17px;

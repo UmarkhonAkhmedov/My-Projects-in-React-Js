@@ -76,6 +76,9 @@ const InfoMain = styled.div`
   @media screen and (max-width: 1024px){
     justify-content: space-between;
   }
+  @media screen and (max-width: 500px){
+    flex-direction: column;
+  }
 
   .Common {
     width: 190px;
@@ -83,6 +86,10 @@ const InfoMain = styled.div`
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     color: #161E54;
+    @media screen and (max-width: 500px){
+      width: 100%;
+      margin: 10px 0;
+    }
 
     h4 {
       margin: 0 0 5px 0;
@@ -104,6 +111,9 @@ const InfoMain = styled.div`
   .Job {
     background-color: #E8F0FB;
     margin: 0 12px;
+    @media screen and (max-width: 500px){
+      margin: 0px;
+    }
     h5 {
       color: #3786F1;
     }
@@ -118,6 +128,13 @@ const InfoMain = styled.div`
 const Total = styled.div`
   display: flex;
   margin-top: 20px;
+  @media screen and (max-width: 500px){
+    flex-direction: column;
+    .request {
+      margin-top: 20px;
+    }
+  }
+
 
   .total {
     position: relative;
@@ -127,6 +144,9 @@ const Total = styled.div`
     padding: 20px;
     color: #161E54;
     border: 1px solid #E0E0E0;
+    @media screen and (max-width: 500px){
+      width: 100%;
+    }
 
     h4 {
       font-size: 17px;

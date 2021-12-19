@@ -14,7 +14,7 @@ function Main() {
       <BreakLine/>
       <Heading>Dashboard</Heading>
       <div className='dashboard'>
-        <div>
+        <div className='left'>
           <Information/>
           <Announcement/>
         </div>
@@ -40,6 +40,15 @@ const Container = styled.div`
   @media screen and (max-width: 1024px){
     left: -120px;
   }
+  @media screen and (max-width: 500px){
+    left: -150px;
+    margin-left: 200px;
+  }
+  @media screen and (max-width: 400px){
+    left: -140px;
+    margin-left: 150px;
+    width: 320px;
+  }
 
   
   .dashboard {
@@ -47,6 +56,19 @@ const Container = styled.div`
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
+    @media screen and (max-width:700px){
+      padding-left: 20px;
+      padding-right: 0px;
+    }
+    @media screen and (max-width:500px){
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media screen and (max-width: 500px){
+      .left {
+        margin-right: 10px;
+      }
+    }
 
     .right {
       width: 400px;
@@ -58,6 +80,19 @@ const Container = styled.div`
         display: flex;
         align-items: stretch;
         width: 100%;
+        padding-top: 25px;
+        padding-left: 0;
+    }
+    };
+    @media screen and (max-width: 500px){
+      flex-direction: column;
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 500px;
+        width: 100%;
+        
         padding-top: 25px;
         padding-left: 0;
     }
@@ -76,4 +111,7 @@ const Heading = styled.h2`
   font-weight: 500;
   color: #161E54;
   padding: 15px 0 10px 40px;
+  @media screen and (max-width:700px){
+    padding: 15px 0 10px 20px;
+  }
 `

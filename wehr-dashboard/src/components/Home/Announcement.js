@@ -1,4 +1,3 @@
-import { style } from '@mui/system'
 import React from 'react'
 import styled from 'styled-components'
 import { AnnouncementData } from './AllData'
@@ -49,6 +48,11 @@ const Container = styled.div`
 
   @media screen and (max-width: 1024px){
     max-width: 900px;
+  }
+  @media screen and (max-width: 400px){
+    max-width: 500px;
+    width: 100%;
+    
   }
 `
 const Heading = styled.div`

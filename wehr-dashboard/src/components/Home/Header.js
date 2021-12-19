@@ -35,6 +35,10 @@ const Navbar = styled.div`
   width: 100%;
   padding: 20px 40px;
   box-sizing: border-box;
+  @media screen and (max-width:700px){
+    padding: 20px 20px;
+    
+  }
 `
 const Search = styled.div`
   position: relative;
@@ -50,6 +54,12 @@ const Search = styled.div`
     border: 1px solid #DEDEDE;
     padding-left: 15px;
     border-radius: 4px;
+    @media screen and (max-width:620px){
+      width: 200px;
+    }
+    @media screen and (max-width: 500px){
+      display: none;
+    }
 
     &::placeholder {
       color: #B2B2B2;
@@ -61,11 +71,20 @@ const Search = styled.div`
     position: absolute;
     top: 5px;
     right: 8px;
+    @media screen and (max-width: 500px){
+      right: -20px;
+    }
   }
 `
 const MainInfo = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width:700px){
+    transform: translateX(20px);
+  }
+  @media screen and (max-width: 400px){
+    transform: translateX(50px);
+    }
   
   
   .icons {
