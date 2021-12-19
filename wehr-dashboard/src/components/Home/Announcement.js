@@ -78,6 +78,12 @@ const Heading = styled.div`
 
 `
 const AnnounceInfo = styled.div`
+  height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
   
   .overall {
     display: flex;
@@ -113,7 +119,7 @@ const AnnounceInfo = styled.div`
 `
 const SeeAll = styled.div`
   border-top: 1px solid #E0E0E0;
-  margin: -7px -20px -7px -20px;
+  margin: 0px -20px -7px -20px;
   text-align: center;
   padding: 8px 0 3px 0;
   color: #FF5151;

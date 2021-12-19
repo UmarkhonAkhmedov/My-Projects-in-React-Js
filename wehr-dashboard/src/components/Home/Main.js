@@ -37,6 +37,7 @@ const Container = styled.div`
   right: 0;
   max-width: 1126px;
   width: 100%;
+  padding-bottom: 50px;
   .dashboard {
     display: flex;
     justify-content: space-between;
