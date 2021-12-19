@@ -18,7 +18,7 @@ function Main() {
           <Information/>
           <Announcement/>
         </div>
-        <div>
+        <div className='right'>
           <RecentActivity/>
           <Upcoming/>
         </div>
@@ -38,7 +38,15 @@ const Container = styled.div`
   max-width: 1126px;
   width: 100%;
   .dashboard {
+    display: flex;
+    justify-content: space-between;
     padding-left: 40px;
+    padding-right: 40px;
+
+    .right {
+      width: 400px;
+      padding-left: 20px;
+    }
   }
 `
 const BreakLine = styled.div`
