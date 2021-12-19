@@ -11,8 +11,8 @@ function Menu() {
       <List>
         {
           MenuData.map(({id, img, text})=> (
-            <span id={id}>
-              <img src={img} alt={text}/>
+            <span className='menu__span' id={id}>
+              <img className='menu__img' src={img} alt={text}/>
               <h3>{text}</h3>
             </span>
           ))
@@ -28,17 +28,24 @@ const Main = styled.div`
   position: fixed;
   max-width: 220px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #FAFAFA;
   padding-left: 25px;
   box-sizing: border-box;
   border-right: 1px solid #F1F1F1;
+  @media screen and (max-width: 1024px){
+    max-width: 100px;
+  }
+  
 
   .smallHeading {
     font-size: 11px;
     color: #686868; 
     font-weight: 500;
     margin-bottom: 10px;
+    @media screen and (max-width: 1024px){
+      transform: translateX(-5px);
+    }
   }
 `
 const Heading = styled.div`
@@ -47,9 +54,35 @@ const Heading = styled.div`
   img {
     width: 90px;
   }
+  @media screen and (max-width:1024px){
+    padding: 40px 0 30px 0px;
+    transform: translateX(-10px);
+    img {
+      width: 70px;
+    }
+  }
 `
 const List = styled.div`
-  
+  @media screen and (max-width: 1024px){
+    .menu__span {
+      padding: 15px 0;
+      transform: translateX(15px);
+
+      &:nth-child(6){
+        &::before {
+          transform: translateX(-8px);
+        }
+      }
+    }
+    h3 {
+      display: none;
+    }
+    .menu__img {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+    }
+  }
   > span {
     display: flex;
     align-items: center;

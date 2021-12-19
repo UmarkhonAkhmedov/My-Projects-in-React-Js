@@ -65,9 +65,17 @@ const Container = styled.div`
   max-width: 640px;
   width: 100%;
   box-sizing: border-box;
+
+  @media screen and (max-width: 1024px){
+    max-width: 900px;
+  }
 `
 const InfoMain = styled.div`
   display: flex;
+  
+  @media screen and (max-width: 1024px){
+    justify-content: space-between;
+  }
 
   .Common {
     width: 190px;

@@ -25,6 +25,9 @@ const Container = styled.div`
   border-radius: 10px;
   padding: 15px 20px;
   box-sizing: border-box;
+  @media screen and (max-width: 1024px){
+    margin-right: 20px;
+  }
 
   h3 {
     font-size: 17px;
@@ -46,6 +49,15 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
+
+    @media screen and (max-width: 1024px){
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 50px;
+      a {
+        margin-top: 30px;
+      }
+    }
     h4 {
       font-size: 14px;
       font-weight: 400;

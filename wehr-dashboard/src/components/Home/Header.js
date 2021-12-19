@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 
@@ -33,7 +32,6 @@ export default Header
 const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 1146px;
   width: 100%;
   padding: 20px 40px;
   box-sizing: border-box;
@@ -68,7 +66,8 @@ const Search = styled.div`
 const MainInfo = styled.div`
   display: flex;
   align-items: center;
-
+  
+  
   .icons {
     width: 23px;
     height: 23px;

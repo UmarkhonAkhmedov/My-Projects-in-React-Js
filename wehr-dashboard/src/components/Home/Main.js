@@ -35,9 +35,13 @@ const Container = styled.div`
   margin-left: 220px;
   top: 0;
   right: 0;
-  max-width: 1126px;
   width: 100%;
   padding-bottom: 50px;
+  @media screen and (max-width: 1024px){
+    left: -120px;
+  }
+
+  
   .dashboard {
     display: flex;
     justify-content: space-between;
@@ -48,6 +52,16 @@ const Container = styled.div`
       width: 400px;
       padding-left: 20px;
     }
+    @media screen and (max-width: 1024px){
+      flex-direction: column;
+      .right {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        padding-top: 25px;
+        padding-left: 0;
+    }
+    };
   }
 `
 const BreakLine = styled.div`

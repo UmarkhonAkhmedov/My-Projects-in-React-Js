@@ -45,7 +45,10 @@ const Container = styled.div`
   border-radius: 12px;
   margin-top: 20px;
   padding: 15px 20px;
-}
+  @media screen and (max-width:1024px){
+    margin-top: 0px;
+  }
+
 `
 const Heading = styled.div`
   display: flex;
@@ -83,6 +86,9 @@ const UpcomingInfo = styled.div`
   overflow-x: hidden;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media screen and (max-width: 1024px){
+    height: 200px;
   }
   .overall {
     display: flex;

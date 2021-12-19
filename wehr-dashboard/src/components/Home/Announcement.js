@@ -46,6 +46,10 @@ const Container = styled.div`
   border-radius: 12px;
   margin-top: 20px;
   padding: 15px 20px;
+
+  @media screen and (max-width: 1024px){
+    max-width: 900px;
+  }
 `
 const Heading = styled.div`
   display: flex;
