@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function SelectCompoments({}){
-
-}
 
 function Dashboard() {
   return (
@@ -45,9 +42,29 @@ function Dashboard() {
           </select>
         </div>
       </SelectionLists>
-      <Contact>
-
-      </Contact>
+      <ContactDetails>
+        <div className='contact mobile'>
+          <img src="/Images/Home/nav__icon--mobile.svg"/>
+          <h3>+32 (0) 15 28 76 67</h3>
+        </div>
+        <div className='contact message'>
+          <img src="/Images/Home/nav__icon--message.svg"/>
+          <h3>Messages</h3>
+          <span>
+            12
+          </span>
+        </div>
+        <div className='contact username'>
+          <img src="https://avatars.githubusercontent.com/u/76143018?v=4"/>
+          <h3>Umarkhon</h3>
+          <span>
+            <h4>Information</h4>
+            <h4>My History</h4>
+            <h4>Profile</h4>
+            <h4>Sign Out</h4>
+          </span>
+        </div>
+      </ContactDetails>
     </Container>
   )
 }
@@ -72,10 +89,16 @@ const SelectionLists = styled.div`
   .selection {
     display: flex;
     color: #0C0C0C;
+    &:hover {
+      select {
+        color: #1071FF;
+      }
+    }
     
     h3 {
       font-size: 14px;
       font-weight: 400;
+      cursor: pointer;
     }
     select {
       border: none;
@@ -100,6 +123,98 @@ const SelectionLists = styled.div`
     }
   }
 `
-const Contact = styled.div`
+const ContactDetails = styled.div`
+  display: flex;
+  align-items: center;
+  .contact {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .mobile {
+    img {
 
+    }
+    h3 {
+      color: #1071FF; 
+      margin-left: 8px;
+      font-size: 14px;
+      padding-right: 16px;
+      &:hover {
+        color: #005BDF;
+      }
+    }
+  }
+  .message {
+    position: relative;
+    border-left: 1px solid #434447;
+    border-right: 1px solid #434447;
+    padding: 10px 16px;
+
+    h3 {
+      margin-left: 12px;
+      transition: all 0.3s ease;
+      color: #0C0C0C;
+      font-weight: 500;
+      &:hover {
+        color: #1071FF;
+      }
+    }
+    span {
+      position: absolute;
+      top: 4px;
+      left: 28px;
+      background-color: #FF4E00;
+      color: white;
+      font-size: 10px;
+      padding: 2px 3px;
+      border-radius: 50%;
+    }
+  }
+  .username {
+    position: relative;
+    padding-left: 16px;
+    transition: all 0.3s ease;
+    padding: 10px 0 0 16px 10px;
+    &:hover {
+      span {
+        display: flex;
+      }
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    h3 {
+      margin-left: 8px;
+      color: #0C0C0C;
+      &:hover {
+        color: #1071FF;
+      }
+    }
+    span {
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      top: 30px;
+      left: 15px;
+      width: 150px;
+      height: 200px;
+      background-color: white;
+      font-weight: 500;
+      color: #1071FF;
+      background-color: #F6F8FB;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      h4 {
+        padding: 10px 0;
+        transition: all 0.3s ease;
+        &:hover {
+        color: #0C0C0C;
+      }
+      }
+    }
+  }
 `
