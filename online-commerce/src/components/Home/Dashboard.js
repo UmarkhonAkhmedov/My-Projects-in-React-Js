@@ -126,6 +126,7 @@ const SelectionLists = styled.div`
 const ContactDetails = styled.div`
   display: flex;
   align-items: center;
+  padding: 2px 0;
   .contact {
     display: flex;
     align-items: center;
@@ -149,7 +150,7 @@ const ContactDetails = styled.div`
     position: relative;
     border-left: 1px solid #434447;
     border-right: 1px solid #434447;
-    padding: 10px 16px;
+    padding: 5px 16px;
 
     h3 {
       margin-left: 12px;
@@ -162,7 +163,7 @@ const ContactDetails = styled.div`
     }
     span {
       position: absolute;
-      top: 4px;
+      top: -2px;
       left: 28px;
       background-color: #FF4E00;
       color: white;
