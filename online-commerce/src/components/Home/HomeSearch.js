@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import QuickOrder from '../QuickOrder/QuickOrder'
 
-function Search() {
+function HomeSearch() {
   return (
     <Container>
       <Logo href="#"><img src="/Images/Home/nav__logo.svg"/></Logo>
@@ -10,13 +11,15 @@ function Search() {
         <input type="search" placeholder='Search by product or SKU'/>
       </Searching>
       <OrderForm href="#">Quick Order Form</OrderForm>
+      <QuickOrder/>
     </Container>
   )
 }
 
-export default Search
+export default HomeSearch
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +37,7 @@ const Searching = styled.div`
   border: 1px solid #EAECEE;
   border-radius: 8px;
   padding: 6px 16px;
-  width: 30%;
+  width: 40%;
   font-size: 14px;
 
   input {
@@ -52,7 +55,7 @@ const Searching = styled.div`
 const OrderForm = styled.a`
   display: block;
   background-color: #1071FF;
-  padding: 12px 32px;
+  padding: 12px 24px;
   color: white;
   font-weight: 500;
   border-radius: 30px;

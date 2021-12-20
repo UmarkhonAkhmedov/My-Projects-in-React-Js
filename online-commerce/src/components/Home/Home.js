@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Dashboard from './Dashboard'
-import Search from './Search'
+import HomeSearch from './HomeSearch'
 
 function Home() {
   return (
     <Container>
       <Dashboard/>
-      <Search/>
+      <HomeSearch/>
     </Container>
   )
 }
