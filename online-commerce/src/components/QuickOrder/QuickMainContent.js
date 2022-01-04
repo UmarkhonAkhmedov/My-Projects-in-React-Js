@@ -4,11 +4,11 @@ import styled from 'styled-components'
 function Elements() {
   return [...Array(6)].map((e, i) => 
     <div className='element'>
-      <input className='item element__input' type="text" key={i}/>
-      <input className='qty element__input' type="number" key={i}/>
+      <input className='item element__input' type="text" key={i} placeholder='Enter SKU or name of product'/>
+      <input className='qty element__input' type="number" key={i} placeholder='Quantity'/>
       <select className='element__input' type="text" key={i}>
-        <option>Item</option>
-        <option>Second</option>
+        <option>Unit</option>
+        <option>item</option>
         <option>Third</option>
       </select>
       <span type="text" key={i}>unavailable</span>
@@ -108,6 +108,7 @@ const Lists = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 7px 0;
+    
 
     .element__input {
       border-radius: 8px;
@@ -115,6 +116,10 @@ const Lists = styled.div`
       outline: none;
       font-size: 14px;
       padding: 12px 16px;
+      &::placeholder {
+        color: #737B7D;
+        font-size: 14px;
+      }
     }
     .item {
       max-width: 300px;
@@ -127,9 +132,13 @@ const Lists = styled.div`
       margin-right: 14px;
     }
     select {
+      color: #737B7D;
       max-width: 180px;
       width: 25%;
       margin-right: 25px;
+      option {
+        color: #0C0C0C;
+      }
     }
     span {
       max-width: 180px;
