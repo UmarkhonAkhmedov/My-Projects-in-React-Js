@@ -17,8 +17,6 @@ function Elements() {
   );
 }
 
-
-
 function QuickMainContent() {
   return (
     <Container>
@@ -46,7 +44,16 @@ function QuickMainContent() {
         </Upload>
       </Orders>
       <Buttons>
-
+        <div className='adding order__buttons'>
+          <span>Add to cart</span>
+          <img src="/Images/Home/order__cart--select.svg"/>
+          <div className='selecting'>
+            <span>Name SKU</span>
+            <span>Name of Product</span>
+          </div>
+        </div>
+        <a className='quoting order__buttons'>Get Quote</a>
+        <a className='creating order__buttons'>Create Order</a>
       </Buttons>
     </Container>
   )
@@ -188,5 +195,65 @@ const Upload = styled.div`
   }
 `
 const Buttons = styled.div`
-  
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  .order__buttons {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 0;
+    max-width: 170px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .adding {
+    position: relative;
+    background-color: #1071FF;
+    &:hover {
+      .selecting {
+        display: flex;
+      };
+    }
+    img {
+      margin-left: 8px;
+    }
+
+    .selecting {
+      position: absolute;
+      top: 30px;
+      display: none;
+      justify-content: center;
+      text-align: center;
+      background-color: white;
+      color: #1071FF;
+      flex-direction: column;
+      padding: 15px 15px;
+      border-radius: 5px;
+      span {
+        transition: all 0.3s ease;
+        margin: 5px 0;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .quoting {
+    background-color: white;
+    color: #1071FF;
+    margin: 0 16px 0 16px;
+  }
+  .creating {
+    background-color: #FF4E00;
+
+  }
 `
