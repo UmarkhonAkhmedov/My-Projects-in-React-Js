@@ -5,7 +5,7 @@ function Login() {
   return (
     <Container>
       <Content>
-        <span className='close'><img src="/Images/Login/close.svg"/></span>
+        <a href="#" className='close'><img src="/Images/Login/close.svg"/></a>
         <h3>Welcome back! Log in</h3>
         <div className='inputs'>
           <span>Login/e-mail</span>
@@ -38,6 +38,10 @@ const Content = styled.div`
   width: 100%;
   padding: 24px 24px 50px 24px;
   border-radius: 8px;
+
+  @media screen and (max-width:650px){
+    margin: 0 20px;
+  }
 
   .close {
     display: flex;
