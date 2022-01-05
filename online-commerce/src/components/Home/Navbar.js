@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import NavbarData from './NavbarData'
 
 function Box({img, text, number}){
   return (
@@ -20,7 +21,9 @@ function Navbar() {
             <h3>HOME & GARDEN</h3>
             <img className='icon icon__usual' src="/Images/Home/navbar__icon--select.svg"/>
             <img className='icon icon__blue' src="/Images/Home/navbar__icon--select__blue.svg"/>
-            <div></div>
+            <div className='navbar__data'>
+              <NavbarData/>
+            </div>
           </div>
           <div className='selecting'>
             <h3>MOTORS</h3>
@@ -46,6 +49,7 @@ export default Navbar
 const Container = styled.div`
   background-color: #F6F8FB;
   padding: 16px 51px;
+  position: relative;
 
   @media screen and (min-width:1400px){
     padding: 16px 88px;
@@ -103,6 +107,17 @@ const Lists = styled.div`
       &:hover {
       color: #1071FF;
     }
+    }
+  }
+  .navbar__data {
+    position: absolute;
+    top: 50px;
+    max-width: 1365px;
+    width: 100%;
+    transform: translateX(-50px);
+    @media screen and (min-width:1400px){
+      max-width: 1440px;
+      transform: translateX(-88px);
     }
   }
 `
