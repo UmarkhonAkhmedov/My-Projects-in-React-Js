@@ -58,10 +58,10 @@ function Dashboard() {
           <img src="https://avatars.githubusercontent.com/u/76143018?v=4"/>
           <h3>Umarkhon</h3>
           <span>
-            <h4>Information</h4>
-            <h4>My History</h4>
-            <h4>Profile</h4>
-            <h4>Sign Out</h4>
+            <h4><a>Information</a></h4>
+            <h4><a>My History</a></h4>
+            <h4><a>Profile</a></h4>
+            <h4><a href="/login">Sign Out</a></h4>
           </span>
         </div>
       </ContactDetails>
@@ -215,7 +215,10 @@ const ContactDetails = styled.div`
         transition: all 0.3s ease;
         &:hover {
         color: #0C0C0C;
-      }
+        }
+        a {
+          color: #1071FF;
+        }
       }
     }
   }
