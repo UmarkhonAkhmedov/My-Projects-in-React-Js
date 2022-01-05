@@ -25,7 +25,7 @@ const Container = styled.div`
   align-items: center;
   padding: 16px 51px;
   @media screen and (min-width:1400px){
-    padding: 0 88px;
+    padding: 20px 88px;
   }
 `
 const Logo = styled.a`

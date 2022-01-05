@@ -22,7 +22,7 @@ const Container = styled.div`
   position: fixed;
   top: calc(10% - 10px);
   left: calc(10% - 70px);
-  display: ${props => props.isOpen ? "block" : "block"};
+  display: ${props => props.isOpen ? "none" : "none"};
   background-color: #E6EFFB;
   width: 90%;
   height: 85vh;

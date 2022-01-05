@@ -79,7 +79,7 @@ const Container = styled.div`
   padding: 8px 51px;
 
   @media screen and (min-width:1400px){
-    padding: 0 88px;
+    padding: 12px 88px;
   }
 `
 const SelectionLists = styled.div`
@@ -180,6 +180,7 @@ const ContactDetails = styled.div`
     &:hover {
       span {
         display: flex;
+        z-index: 100;
       }
     }
     img {
