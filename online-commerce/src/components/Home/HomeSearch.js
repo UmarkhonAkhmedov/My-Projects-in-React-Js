@@ -58,10 +58,12 @@ const OrderForm = styled.button`
   display: block;
   background-color: #1071FF;
   padding: 12px 24px;
+  border: none;
   color: white;
   font-weight: 500;
   border-radius: 30px;
   transition: all 0.3s ease;
+  cursor: pointer;
   &:hover {
     opacity: 0.8;
   }
