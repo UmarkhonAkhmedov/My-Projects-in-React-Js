@@ -114,6 +114,7 @@ const Lists = styled.div`
     top: 50px;
     max-width: 1365px;
     width: 100%;
+    overflow-x: hidden;
     transform: translateX(-50px);
     @media screen and (min-width:1400px){
       max-width: 1440px;

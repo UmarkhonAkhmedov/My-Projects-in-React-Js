@@ -12,6 +12,7 @@ body {
   width: 100%;
   font-size: 14px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
