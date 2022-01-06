@@ -111,7 +111,7 @@ const Lists = styled.div`
   }
   .navbar__data {
     position: absolute;
-    top: 50px;
+    top: 70px;
     max-width: 1365px;
     width: 100%;
     overflow-x: hidden;
