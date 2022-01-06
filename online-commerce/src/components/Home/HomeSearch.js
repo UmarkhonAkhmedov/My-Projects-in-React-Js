@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import QuickOrder from '../QuickOrder/QuickOrder'
 
 function HomeSearch() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <Container>
       <Logo href="#"><img src="/Images/Home/nav__logo.svg"/></Logo>
@@ -10,8 +12,8 @@ function HomeSearch() {
         <img src="/Images/Home/nav__search.svg"/>
         <input type="search" placeholder='Search by product or SKU'/>
       </Searching>
-      <OrderForm href="#">Quick Order Form</OrderForm>
-      <QuickOrder/>
+      <OrderForm  onClick={()=>setIsOpen(true)}>Quick Order Form</OrderForm>
+      <QuickOrder isOpen={isOpen} setIsOpen={setIsOpen}/>
     </Container>
   )
 }
@@ -52,7 +54,7 @@ const Searching = styled.div`
     }
   }
 `
-const OrderForm = styled.a`
+const OrderForm = styled.button`
   display: block;
   background-color: #1071FF;
   padding: 12px 24px;

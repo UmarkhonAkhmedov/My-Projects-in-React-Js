@@ -1,15 +1,14 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import QuickMainContent from './QuickMainContent'
 
-function QuickOrder() {
-  const [isOpen, setIsOpen] = useState(true)
+function QuickOrder({isOpen, setIsOpen}) {
 
   return (
-    <Container>
-      <Header isOpen={isOpen}>
+    <Container isOpen={isOpen}>
+      <Header>
         <h2>Quick order form</h2>
-        <img onClick={() => setIsOpen(false)} isOpen={isOpen} src="/Images/Home/order__close.svg" alt="Close Button"/>
+        <img onClick={() => setIsOpen(false)} src="/Images/Home/order__close.svg" alt="Close Button"/>
       </Header>
       <QuickMainContent/>
     </Container>
@@ -22,13 +21,13 @@ const Container = styled.div`
   position: fixed;
   top: calc(10% - 10px);
   left: calc(10% - 70px);
-  display: ${props => props.isOpen ? "none" : "none"};
+  display: ${props => props.isOpen ? "block" : "none"};
   background-color: #E6EFFB;
   width: 90%;
   height: 85vh;
   box-shadow: rgba(0, 0, 0, 1) 20px 15px 150px 1px;
   padding: 50px 60px 52px 60px;
-
+  z-index: 10;
 `
 const Header = styled.div`
   display: flex;
