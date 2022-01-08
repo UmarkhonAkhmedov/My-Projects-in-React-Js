@@ -92,6 +92,7 @@ const Lists = styled.div`
       }
       .navbar__data {
         display: block;
+        z-index: 10;
       }
     }
   }
@@ -120,11 +121,11 @@ const Lists = styled.div`
     position: absolute;
     display: none;
     top: 70px;
-    max-width: 1365px;
+    max-width: 1366px;
     width: 100%;
     overflow-x: hidden;
     box-shadow: rgba(40, 35, 38, 0.2) 0px 30px 20px -10px;
-    transform: translateX(-50px);
+    transform: translateX(-51px);
     @media screen and (min-width:1400px){
       max-width: 1440px;
       transform: translateX(-88px);
