@@ -46,6 +46,7 @@ export default SliderBrands
 
 const Container = styled.div`
   padding: 0px 51px;
+  margin-bottom: 50px;
   position: relative;
 
 

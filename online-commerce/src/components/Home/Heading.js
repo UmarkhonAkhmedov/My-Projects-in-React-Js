@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Brand() {
+function Heading({heading, text}) {
   return (
     <Container>
-      <h3>Our brands</h3>
-      <a>Show all brands<img src="/Images/Home/brand__arrow--right.svg"/></a>
+      <h3>{heading}</h3>
+      <a>{text}<img src="/Images/Home/brand__arrow--right.svg"/></a>
     </Container>
   )
 }
 
-export default Brand
+export default Heading
 
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding: 25px 51px;
   @media screen and (min-width:1400px){
