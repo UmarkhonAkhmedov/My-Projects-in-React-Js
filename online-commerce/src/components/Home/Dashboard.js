@@ -77,7 +77,7 @@ const Container = styled.div`
   align-items: center;
   background-color: #F6F8FB;
   padding: 8px 51px;
-
+  z-index: 10;
   @media screen and (min-width:1400px){
     padding: 12px 88px;
   }

@@ -18,7 +18,7 @@ function Navbar() {
       <Nav>
         <Lists>
           <div className='selecting'>
-            <h3>HOME & GARDEN</h3>
+            <h3 className='home__garden'>HOME & GARDEN</h3>
             <img className='icon icon__usual' src="/Images/Home/navbar__icon--select.svg"/>
             <img className='icon icon__blue' src="/Images/Home/navbar__icon--select__blue.svg"/>
             <div className='navbar__data'>
@@ -48,11 +48,11 @@ export default Navbar
 
 const Container = styled.div`
   background-color: #F6F8FB;
-  padding: 16px 51px;
+  padding: 0px 51px;
   position: relative;
 
   @media screen and (min-width:1400px){
-    padding: 16px 88px;
+    padding: 0px 88px;
   }
 `
 
@@ -68,6 +68,7 @@ const Lists = styled.div`
   .selecting {
     display: flex;
     margin-right: 50px;
+    padding: 30px 0;
 
     .icon {
       margin-left: 6px;
@@ -83,7 +84,13 @@ const Lists = styled.div`
       .icon__usual {
         display: none;
       }
+      h3 {
+        color: #1071FF;
+      }
       .icon__blue {
+        display: block;
+      }
+      .navbar__data {
         display: block;
       }
     }
@@ -92,7 +99,7 @@ const Lists = styled.div`
     color: #0C0C0C;
     cursor: pointer;
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     font-weight: 600;
     &:hover {
       color: #1071FF;
@@ -111,10 +118,12 @@ const Lists = styled.div`
   }
   .navbar__data {
     position: absolute;
+    display: none;
     top: 70px;
     max-width: 1365px;
     width: 100%;
     overflow-x: hidden;
+    box-shadow: rgba(40, 35, 38, 0.2) 0px 30px 20px -10px;
     transform: translateX(-50px);
     @media screen and (min-width:1400px){
       max-width: 1440px;

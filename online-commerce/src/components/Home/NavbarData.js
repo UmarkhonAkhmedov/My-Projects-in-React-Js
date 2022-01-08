@@ -91,8 +91,9 @@ function NavbarData() {
 export default NavbarData
 
 const Container = styled.div`
-  background-color: lightblue;
+  background-color: white;
   padding: 32px 20px 32px 51px;
+  box-shadow: 0 5px 5px -5px #333;
   @media screen and (min-width:1400px){
     padding: 32px 50px 32px 88px;
   }
@@ -130,7 +131,7 @@ const Items = styled.div`
         margin: 6px 0;
         a {
           color: #0C0C0C;
-          transition: all 0.3s ease;
+          transition: all 0.1s ease;
           &:hover {
             color: #1071FF;
           }

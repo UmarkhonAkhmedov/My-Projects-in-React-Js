@@ -26,6 +26,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 16px 51px;
+  background-color: white;
+  z-index: 10;
   @media screen and (min-width:1400px){
     padding: 20px 88px;
   }
