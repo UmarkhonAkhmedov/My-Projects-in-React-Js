@@ -63,48 +63,48 @@ function RecommendedElements(){
   return (
     <Main>
       {RecommendedData.map((element) => (
-        <div id={element.id}>
-          <div>
+        <Element className="element" id={element.id}>
+          <ElementTop className="main__img">
             <img src={element.img}/>
-            <div>
+
               <h4>-{element.discount}%</h4>
-              <img src="/Images/Home/rec__icon--star.svg"/>
-              <div>
-                <span>
-                  <img src="/Images/Home/rec__icon--tick__green.svg"/>
-                  <p>{element.stock}</p>
-                </span>
-                <span>
-                  <img src="/Images/Home/rec__icon--window.svg"/>
-                  <img src="/Images/Home/rec__icon--share.svg"/>
-                </span>
-              </div>
+              <span className="star"><img src="/Images/Home/rec__icon--star.svg"/></span>
+
+              <span className="stock">
+                <img src="/Images/Home/rec__icon--tick__green.svg"/>
+                <p>{element.stock}</p>
+              </span>
+              <span className="share__icons">
+                <img src="/Images/Home/rec__icon--window.svg"/>
+                <img src="/Images/Home/rec__icon--share.svg"/>
+              </span>
+          </ElementTop>
+          <ElementBottom>
+            <p className="subtitle">{element.subtitle} | Part No. {element.number}</p>
+            <h3 className="title">{element.title}</h3>
+            <div className="element__info">
+              <p>Basin width : {element.width} cm</p>
+              <p>Basin height: {element.height} cm</p>
+              <p>Basin depth: {element.depth} cm</p>
             </div>
-          </div>
-          <p>{element.subtitle} | Part No. {element.number}</p>
-          <h3>{element.title}</h3>
-          <div>
-            <p>Basin width : {element.width} cm</p>
-            <p>Basin height: {element.height} cm</p>
-            <p>Basin depth: {element.depth} cm</p>
-          </div>
-          <div>
-            Your price ${element.price} net <span><strike>${element.priceDiscount} net</strike></span>
-          </div>
-          <div>
-            <span>1</span>
-            <select>
-              <option>Item</option>
-              <option>Unit</option>
-              <option>Third</option>
-            </select>
-          </div>
-          <button>Add to cart</button>
-          <div>
-            <img src="/Images/Home/rec__icon--tick__blue.svg"/>
-            <p>Added to cart</p>
-          </div>
-        </div>
+            <div className="price">
+              Your price ${element.price} net <span><strike>${element.priceDiscount} net</strike></span>
+            </div>
+            <div className="amount__item">
+              <span>1</span>
+              <select>
+                <option>Item</option>
+                <option>Unit</option>
+                <option>Third</option>
+              </select>
+            </div>
+            <button className="add__button">Add to cart</button>
+            <div className="Added__cart">
+              <img src="/Images/Home/rec__icon--tick__blue.svg"/>
+              <p>Added to cart</p>
+            </div>
+          </ElementBottom>
+        </Element>
       ))}
     </Main>
   )
@@ -113,7 +113,78 @@ function RecommendedElements(){
 export default RecommendedElements
 
 const Main = styled.div`
-
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
 `
+const Element = styled.div`
+  max-width: 300px;
+  width: 100%;
+`
+const ElementTop = styled.div`
+  position: relative;
 
+  h4 {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF7E27;
+  }
+  .star {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: #E6EFFB;
+    border-radius: 50%;
+
+  }
+  .stock {
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #00893A;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #F6F8FB;
+    padding: 6px 8px;
+    border-radius: 4px;
+    img {
+      margin-right: 4px;
+    }
+  }
+  .share__icons {
+    position: absolute;
+    right: 6px;
+    bottom: 13px;
+    display: flex;
+    align-items: center;
+    img:first-child{
+      margin-right: 10px;
+    }
+  }
+  
+`
+const ElementBottom = styled.div`
+  border: 1px solid #F6F8FB;
+  margin-top: -5px;
+  padding-top: 25px;
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+`
 
