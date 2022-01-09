@@ -13,8 +13,8 @@ export default function ProductItem(element){
         <span className="star"><img src="/Images/Home/rec__icon--star.svg"/></span>
 
         <span className="stock">
-          <img src="/Images/Home/rec__icon--tick__green.svg"/>
-          <p style={element.stock === "Out of stock" ? {color: "red"} : {color: "green"}}>{element.stock}</p>
+          <img src={element.tick}/>
+          <p style={element.stock === "Out of stock" ? {color: "#F52F2F"} : {color: "#00893A"}}>{element.stock}</p>
         </span>
         <span className="share__icons">
           <img src="/Images/Home/rec__icon--window.svg"/>
@@ -90,7 +90,6 @@ const ElementTop = styled.div`
     bottom: 10px;
     display: flex;
     align-items: center;
-    color: #00893A;
     font-size: 14px;
     font-weight: 500;
     border: 1px solid #F6F8FB;
@@ -205,6 +204,7 @@ const ElementBottom = styled.div`
     font-size: 14px;
     font-weight: 500;
     padding: 8px 0;
+    cursor: pointer;
     img {
       margin-right: 8px;
     }
