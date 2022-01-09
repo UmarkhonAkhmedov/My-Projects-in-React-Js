@@ -1,12 +1,10 @@
 import styled from "styled-components"
-
-
-
+import RecommendedElements from "./RecommendedData"
 
 function Recommended() {
   return (
     <Container>
-      
+      <RecommendedElements/>
     </Container>
   )
 }

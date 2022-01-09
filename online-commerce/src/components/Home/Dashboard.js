@@ -202,6 +202,7 @@ const ContactDetails = styled.div`
       align-items: center;
       padding-top: 20px;
       top: 30px;
+      anima
       left: 15px;
       width: 150px;
       height: 200px;
