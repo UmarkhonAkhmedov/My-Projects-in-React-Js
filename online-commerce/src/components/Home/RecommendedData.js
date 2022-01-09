@@ -10,10 +10,10 @@ const RecommendedData = [
     number: "2123532",
     title: "Connection with a handle Omnires round",
     width: 34,
-    heihgt: 45,
+    height: 45,
     depth: 45,
-    price: 45.00,
-    priceDiscount: 55.00,
+    price: "45.00",
+    priceDiscount: "55.00",
   },
   {
     id: 2,
@@ -24,10 +24,10 @@ const RecommendedData = [
     number: "129565",
     title: "Countertop washbasin GoodHome Tekapo",
     width: 32,
-    heihgt: 21,
+    height: 21,
     depth: 75,
-    price: 51.00,
-    priceDiscount: 64.00,
+    price: "51.00",
+    priceDiscount: "64.00",
   },
   {
     id: 3,
@@ -38,10 +38,10 @@ const RecommendedData = [
     number: "833565",
     title: "Perforated Simpson tape 25 x 2500 x 2 mm",
     width: 45,
-    heihgt: 12,
+    height: 12,
     depth: 35,
-    price: 79.00,
-    priceDiscount: 70.00,
+    price: "79.00",
+    priceDiscount: "70.00",
   },
   {
     id: 4,
@@ -54,8 +54,8 @@ const RecommendedData = [
     width: 45,
     height: 12,
     depth: 35,
-    price: 38.00,
-    priceDiscount: 30.00,
+    price: "38.00",
+    priceDiscount: "30.00",
   }
 ]
 
@@ -88,7 +88,7 @@ function RecommendedElements(){
               <p>Basin depth: {element.depth} cm</p>
             </div>
             <div className="price">
-              Your price ${element.price} net <span><strike>${element.priceDiscount} net</strike></span>
+              Your price <span className="blue">${element.price}</span> net <span className="orange"><strike>${element.priceDiscount} net</strike></span>
             </div>
             <div className="amount__item">
               <span>1</span>
@@ -119,12 +119,13 @@ const Main = styled.div`
   padding: 20px 0;
 `
 const Element = styled.div`
-  max-width: 300px;
+  max-width: 301px;
   width: 100%;
 `
 const ElementTop = styled.div`
   position: relative;
-
+  max-width: 300px;
+  width: 100%;
   h4 {
     position: absolute;
     top: 16px;
@@ -178,13 +179,46 @@ const ElementTop = styled.div`
   
 `
 const ElementBottom = styled.div`
+  
+  width: 100%;  
   border: 1px solid #F6F8FB;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   margin-top: -5px;
-  padding-top: 25px;
+  padding: 14px 8px;
+  .subtitle {
+    color: #737B7D;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
   .title {
     display: flex;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 20px;
+    color: #0C0C0C;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  .element__info {
+    color: #0C0C0C;
+    margin-bottom: 12px;
+    p {
+      margin-bottom: 4px;
+    }
+  }
+  .price {
+    color: #1071FF;
+    font-weight: 700;
+
+    .blue {
+      font-size: 24px;
+    }
+    .orange {
+      color: #FF7E27;
+      font-size: 16px;
+      font-weight: 500;
+      margin-left: 4px;
+    }
   }
 `
 
