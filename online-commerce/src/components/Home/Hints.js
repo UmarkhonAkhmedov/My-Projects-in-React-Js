@@ -32,7 +32,7 @@ function Hints() {
     <Container>
       {
         HintsData.map((element) => (
-          <Hint>
+          <Hint id={element.id}>
             <img className="main__img" src={`/Images/Home/recCat__main--${element.img}.png`}/>
             <h3>{element.title}</h3>
             <p>{element.text}</p>

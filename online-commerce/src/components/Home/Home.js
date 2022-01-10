@@ -20,6 +20,7 @@ function Home() {
       <Heading heading="Recommended products" text="Show all recommended products"/>
       <Recommended/>
       <Offer/>
+      <Heading heading="Recommended Categories" text="Show all categories"/>
       <Heading heading="Hints for you" text="Show all hints"/>
       <Hints/>
     </Container>
