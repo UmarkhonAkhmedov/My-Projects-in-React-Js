@@ -9,6 +9,7 @@ import Recommended from './Recommended'
 import Offer from './Offer'
 import Hints from './Hints'
 import Category from './Category'
+import Save from './Save'
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
       <Category/>
       <Heading heading="Hints for you" text="Show all hints"/>
       <Hints/>
+      <Save/>
     </Container>
   )
 }
