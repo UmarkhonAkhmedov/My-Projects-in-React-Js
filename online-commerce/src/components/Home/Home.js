@@ -7,6 +7,7 @@ import Navbar from './Navbar'
 import SliderBrands from './SliderBrands'
 import Recommended from './Recommended'
 import Offer from './Offer'
+import Hints from './Hints'
 
 function Home() {
   return (
@@ -19,6 +20,8 @@ function Home() {
       <Heading heading="Recommended products" text="Show all recommended products"/>
       <Recommended/>
       <Offer/>
+      <Heading heading="Hints for you" text="Show all hints"/>
+      <Hints/>
     </Container>
   )
 }
