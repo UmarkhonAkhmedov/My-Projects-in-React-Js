@@ -25,12 +25,32 @@ const Container = styled.div`
   @media screen and (min-width:1400px){
     padding: 40px 88px;
   }
+  @media screen and (max-width:768px){
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .delivery__info {
+      width: 100%;
+    }
+  }
   img {
     max-width: 600px;
     width: 45%;
+    @media screen and (max-width: 768px){
+      margin-top: 50px;
+      max-width: 500px;
+      width: 100%;
+    }
   }
   .delivery__info {
     width: 50%;
+    @media screen and (max-width: 768px){
+      width: 100%;
+
+      p {
+        margin: 0 auto;
+      }
+    }
     h3 {
       color: #0C0C0C;
       font-size: 32px;
