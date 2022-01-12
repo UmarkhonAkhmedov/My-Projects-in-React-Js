@@ -18,6 +18,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #1071FF;
   margin: 80px 0 40px 0;
   padding: 16px 51px;
@@ -28,6 +29,7 @@ const Container = styled.div`
   .offer__left {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     img {
       margin-right: 20px;
     }

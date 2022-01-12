@@ -52,6 +52,7 @@ export default Hints
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   
   padding: 0px 51px;
   @media screen and (min-width:1400px){

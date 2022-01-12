@@ -63,12 +63,23 @@ const Items = styled.div`
     font-size: 19px;
     margin-bottom: 24px;
   }
+  @media screen and (max-width: 850px){
+    flex-direction: column;
+  }
 
 `
 const SignUp = styled.div`
   max-width: 300px;
   width: 100%;
-
+  margin-right: 20px;
+  @media screen and (max-width: 850px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
   p {
     line-height: 22px;
   }
@@ -141,6 +152,29 @@ const Links = styled.div`
             color: #1071FF;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px){
+    flex-wrap: wrap;
+
+    .Link {
+      margin: 5px 10px;
+    }
+  }
+  @media screen and (max-width: 850px){
+    margin-top: 40px;
+    justify-content: center;
+    .Link {
+      margin: 10px 15px;
+    }
+  }
+  @media screen and (max-width: 400px){
+    text-align: center;
+    .Link {
+      ul {
+        justify-content: center;
+        text-align: center;
       }
     }
   }

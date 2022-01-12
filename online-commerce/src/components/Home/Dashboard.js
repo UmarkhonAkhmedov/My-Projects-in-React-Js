@@ -75,6 +75,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #F6F8FB;
   padding: 8px 51px;
   z-index: 10;
@@ -85,6 +86,7 @@ const Container = styled.div`
 const SelectionLists = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   .selection {
     display: flex;
@@ -126,6 +128,7 @@ const SelectionLists = styled.div`
 const ContactDetails = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding: 2px 0;
   .contact {
     display: flex;

@@ -41,6 +41,7 @@ export default Category
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0px 51px;
   margin: 0px 0 50px 0;
   @media screen and (min-width:1400px){

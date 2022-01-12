@@ -60,10 +60,12 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 `
 const Lists = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   .selecting {
     display: flex;

@@ -40,11 +40,33 @@ const Items = styled.div`
       color: #434447;
     }
   }
+  @media screen and (max-width: 650px){
+    justify-content: center;
+    flex-wrap: wrap;
+    .copyright {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    } 
+  }
 `
 
 const SocialLinks = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width:500px){
+    flex-direction: column;
+    
+    .links {
+      a {
+        margin: 0 8px;
+      }
+    }
+    .footer__logo {
+      transform: translateX(-20px);
+    }
+  }
+  
 
   .links {
     a {
