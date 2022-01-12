@@ -42,15 +42,31 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 10px;
   padding: 0px 51px;
   margin: 0px 0 50px 0;
   @media screen and (min-width:1400px){
     padding: 0px 88px;
   }
+  @media screen and (max-width:1290px){
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 500px){
+    padding: 0 30px;
+  }
 
   a {
     max-width: 290px;
     width: 100%;
+    @media screen and (max-width:1290px){
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width:700px){
+      max-width: 200px;
+    }
+    @media screen and (max-width:510px){
+      max-width: 130px;
+    }
     img {
       max-width: 290px;
       width: 100%;
@@ -72,6 +88,10 @@ const Container = styled.div`
       transition: all 0.3s ease;
       &:hover {
         opacity: 0.8;
+      }
+      @media screen and (max-width:510px){
+        font-size: 13px;
+        text-align: center;
       }
     }
   }

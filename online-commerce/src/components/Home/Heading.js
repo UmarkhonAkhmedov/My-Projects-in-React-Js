@@ -16,10 +16,13 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  column-gap: 10px;
   padding: 25px 51px;
   @media screen and (min-width:1400px){
     padding: 25px 88px;
+  }
+  @media screen and (max-width: 500px){
+    padding: 15px 30px;
   }
 
   h3 {

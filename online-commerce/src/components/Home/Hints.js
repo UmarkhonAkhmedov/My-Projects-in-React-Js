@@ -53,15 +53,26 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 10px;
   
   padding: 0px 51px;
   @media screen and (min-width:1400px){
     padding: 0px 88px;
   }
+  @media screen and (max-width: 1024px){
+    justify-content: space-around;
+  }
 `
 const Hint = styled.div`
   max-width: 290px !important;
   width: 100%;
+  @media screen and (max-width: 1024px){
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 700px){
+    max-width: 270px !important;
+    width: 100%;
+  }
   
   .main__img {
     max-width: 290px !important;
@@ -84,6 +95,9 @@ const Hint = styled.div`
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis; 
+    @media screen and (max-width: 400px){
+      max-width: 270px; 
+    }
   }
   span {
     display: flex;
