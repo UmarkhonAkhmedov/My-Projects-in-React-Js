@@ -18,20 +18,25 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #1071FF;
   margin: 80px 0 40px 0;
   padding: 16px 51px;
   @media screen and (min-width:1400px){
     padding: 16px 88px;
   }
+  @media screen and (max-width:600px){
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .offer__left {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     img {
       margin-right: 20px;
+      @media screen and (max-width:670px){
+        width: 20%;
+      }
     }
     h1 {
       display: flex;
@@ -41,6 +46,18 @@ const Container = styled.div`
       span {
         font-size: 80px;
         margin-right: 16px;
+      }
+      @media screen and (max-width:910px){
+        font-size: 24px;
+        span {
+          font-size: 40px;
+        }
+      }
+      @media screen and (max-width:670px){
+        font-size: 20px;
+        span {
+          font-size: 32px;
+        }
       }
     }
   

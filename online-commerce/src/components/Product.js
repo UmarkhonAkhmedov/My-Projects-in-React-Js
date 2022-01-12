@@ -55,11 +55,22 @@ export default function ProductItem(element){
 const Element = styled.div`
   max-width: 301px;
   width: 100%;
+  @media screen and (max-width:1340px){
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width:715px){
+    max-width: 270px;
+  }
 `
 const ElementTop = styled.div`
   position: relative;
   max-width: 300px;
   width: 100%;
+  @media screen and (max-width:715px){
+    img {
+      max-width: 270px;
+    }
+  }
   h4 {
     position: absolute;
     top: 16px;

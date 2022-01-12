@@ -90,6 +90,10 @@ const Main = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  column-gap: 10px;
   flex-wrap: wrap;
   padding: 20px 0;
+  @media screen and (max-width:1340px){
+    justify-content: space-around;
+  }
 `
