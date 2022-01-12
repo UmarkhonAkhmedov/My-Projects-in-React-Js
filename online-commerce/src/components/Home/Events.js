@@ -59,15 +59,22 @@ const Container = styled.div`
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 10px;
   padding: 0px 51px;
   margin-bottom: 40px;
   @media screen and (min-width:1400px){
     padding: 0px 88px;
   }
+  @media screen and (max-width: 1300px){
+    justify-content: space-around;
+  }
 `
 const Item = styled.div`
   max-width: 290px;
   width: 100%;
+  @media screen and (max-width: 1300px){
+    margin-bottom: 20px;
+  }
   img {
     max-width: 290px;
     width: 100%;

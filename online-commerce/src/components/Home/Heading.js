@@ -26,6 +26,9 @@ const Container = styled.div`
     font-size: 22px;
     font-weight: 700;
     color: #0C0C0C;
+    @media screen and (max-width: 500px){
+      font-size: 18px;
+    }
   }
   a {
     display: flex;
@@ -33,10 +36,16 @@ const Container = styled.div`
     color: #1071FF;
     font-size: 15px;
     font-weight: 500;
+    @media screen and (max-width: 500px){
+      font-size: 13px;
+    }
     cursor: pointer;
     transition: all 0.3s ease;
     img {
       margin-left: 8px;
+      @media screen and (max-width: 500px){
+        margin-left: 4px;
+      }
     }
     &:hover {
       color: #0C0C0C;
