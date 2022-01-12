@@ -12,6 +12,7 @@ import Category from './Category'
 import Save from './Save'
 import New from './New'
 import Delivery from './Delivery'
+import Events from './Events'
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
       <New/>
       <Delivery/>
       <Heading heading="Events for you" text="Show all events"/>
+      <Events/>
     </Container>
   )
 }
