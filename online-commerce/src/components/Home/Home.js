@@ -31,6 +31,7 @@ function Home() {
       <Save/>
       <New/>
       <Delivery/>
+      <Heading heading="Events for you" text="Show all events"/>
     </Container>
   )
 }
