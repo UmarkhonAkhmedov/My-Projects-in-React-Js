@@ -13,6 +13,7 @@ import Save from './Save'
 import New from './New'
 import Delivery from './Delivery'
 import Events from './Events'
+import Footer from '../Footer/Footer'
 
 function Home() {
   return (
@@ -34,6 +35,7 @@ function Home() {
       <Delivery/>
       <Heading heading="Events for you" text="Show all events"/>
       <Events/>
+      <Footer/>
     </Container>
   )
 }
