@@ -35,7 +35,11 @@ const Items = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  column-gap: 10px;
+  @media screen and (max-width:768px){
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   .Item {
     display: flex;
@@ -44,11 +48,18 @@ const Items = styled.div`
     max-width: 390px;
     width: 100%;
     border-radius: 8px;
+    @media screen and (max-width:768px){
+      max-width: 250px;
+      margin-bottom: 10px;
+    }
     h3 {
       width: 50%;
       text-align: center;
       color: white;
       font-size: 19px;
+      @media screen and (max-width:1024px){
+        font-size: 14px;
+      }
     }
     img {
         width: 50%;
