@@ -11,6 +11,7 @@ import Hints from './Hints'
 import Category from './Category'
 import Save from './Save'
 import New from './New'
+import Delivery from './Delivery'
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
       <Hints/>
       <Save/>
       <New/>
+      <Delivery/>
     </Container>
   )
 }
