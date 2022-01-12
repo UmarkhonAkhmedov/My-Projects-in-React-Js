@@ -14,10 +14,10 @@ function Footer() {
 export default Footer
 
 const Container = styled.div`
-  padding: 40px 51px;
+  padding: 40px 51px 20px 51px;
   margin-top: 40px;
   background-color: #F6F8FB;
   @media screen and (min-width:1400px){
-    padding: 40px 88px;
+    padding: 40px 88px 20px 88px;
   }
 `
