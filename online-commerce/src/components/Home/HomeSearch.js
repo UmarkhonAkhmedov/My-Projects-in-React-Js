@@ -32,9 +32,21 @@ const Container = styled.div`
   @media screen and (min-width:1400px){
     padding: 20px 88px;
   }
+  @media screen and (max-width: 500px){
+    padding: 20px 30px;
+  }
 `
 const Logo = styled.a`
-
+  @media screen and (max-width: 900px){
+    img {
+      max-width: 300px;
+    }
+  }
+  @media screen and (max-width:500px){
+    img {
+      max-width: 170px;
+    }
+  }
 `
 const Searching = styled.div`
   display: flex;
@@ -56,6 +68,12 @@ const Searching = styled.div`
       font-size: 14px;
     }
   }
+  @media screen and (max-width:768px){
+    order: 3;
+    width: 80%;
+    margin: 20px auto 0 auto;
+
+  }
 `
 const OrderForm = styled.button`
   display: block;
@@ -69,5 +87,9 @@ const OrderForm = styled.button`
   cursor: pointer;
   &:hover {
     opacity: 0.8;
+  }
+  @media screen and (max-width:500px){
+    padding: 6px 12px;
+    font-size: 12px;
   }
 `

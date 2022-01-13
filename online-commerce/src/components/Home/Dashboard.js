@@ -75,6 +75,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 10px;
   flex-wrap: wrap;
   background-color: #F6F8FB;
   padding: 8px 51px;
@@ -82,6 +83,11 @@ const Container = styled.div`
   @media screen and (min-width:1400px){
     padding: 12px 88px;
   }
+  @media screen and (max-width: 500px){
+    padding: 8px 30px;
+    column-gap: 0px;
+  }
+  
 `
 const SelectionLists = styled.div`
   display: flex;
@@ -101,6 +107,10 @@ const SelectionLists = styled.div`
       font-size: 14px;
       font-weight: 400;
       cursor: pointer;
+
+      @media screen and (max-width:650px){
+        display: none;
+      }
     }
     select {
       border: none;
@@ -115,6 +125,9 @@ const SelectionLists = styled.div`
   }
   .language {
     margin: 0 16px;
+    @media screen and (max-width:420px){
+      margin: 0 4px;
+    }
     select {
       padding-right: 3px;
     }
@@ -136,6 +149,9 @@ const ContactDetails = styled.div`
     cursor: pointer;
   }
   .mobile {
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
     img {
 
     }
@@ -154,6 +170,9 @@ const ContactDetails = styled.div`
     border-left: 1px solid #434447;
     border-right: 1px solid #434447;
     padding: 5px 16px;
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
 
     h3 {
       margin-left: 12px;
@@ -205,7 +224,6 @@ const ContactDetails = styled.div`
       align-items: center;
       padding-top: 20px;
       top: 30px;
-      anima
       left: 15px;
       width: 150px;
       height: 200px;
