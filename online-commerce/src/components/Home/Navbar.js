@@ -54,23 +54,44 @@ const Container = styled.div`
   @media screen and (min-width:1400px){
     padding: 0px 88px;
   }
+  @media screen and (max-width: 500px){
+    padding: 0px 30px;
+  }
 `
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  @media screen and (max-width:950px){
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
 `
 const Lists = styled.div`
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  @media screen and (max-width:680px){
+    justify-content: space-between;
+  }
+  @media screen and (max-width:460px){
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
 
   .selecting {
     display: flex;
     margin-right: 50px;
     padding: 30px 0;
+    @media screen and (max-width:680px){
+      margin-right: 10px;
+    }
+    @media screen and (max-width:460px){
+      padding: 10px 0;
+    }
 
     .icon {
       margin-left: 6px;
@@ -104,11 +125,17 @@ const Lists = styled.div`
     font-size: 14px;
     transition: all 0.1s ease;
     font-weight: 600;
+    @media screen and (max-width:590px){
+      font-size: 12px;
+    }
     &:hover {
       color: #1071FF;
     }
     &:last-child {
       margin-left: 50px;
+      @media screen and (max-width:680px){
+        margin-left: 10px;
+      }
     }
     a {
       color: #0C0C0C;
@@ -137,12 +164,16 @@ const Lists = styled.div`
 const Boxes = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width:460px){
+      margin-top: 20px;
+  }
   .box {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+
     &:hover {
 
       h4 {
@@ -160,6 +191,9 @@ const Boxes = styled.div`
       font-size: 14px;
       font-weight: 500;
       transition: all 0.3s ease;
+      @media screen and (max-width:500px){
+        font-size: 12px;
+      }
     }
     span {
       position: absolute;
