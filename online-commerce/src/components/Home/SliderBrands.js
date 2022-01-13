@@ -10,7 +10,14 @@ function SliderBrands() {
       <InfiniteCarousel
       breakpoints={[
         {
-          breakpoint: 500,
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 650,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -53,12 +60,25 @@ const Container = styled.div`
   @media screen and (min-width:1400px){
     padding: 0px 88px;
   }
+  @media screen and (max-width: 500px){
+    padding: 0px 30px;
+  }
 
   .block {
     width: 300px;
     padding: 10px 48px;
     transform: translateX(20px);
-
+    @media screen and (max-width:420px){
+      transform: translateX(0px);
+      img {
+        width: 130px;
+      }
+    }
+    @media screen and (max-width:390px){
+      img {
+        width: 130px;
+      }
+    }
     img {
       width: 147px;
       height: 56px;
