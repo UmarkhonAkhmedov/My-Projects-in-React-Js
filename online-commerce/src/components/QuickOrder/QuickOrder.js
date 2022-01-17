@@ -28,6 +28,9 @@ const Container = styled.div`
   box-shadow: rgba(0, 0, 0, 1) 20px 15px 150px 1px;
   padding: 50px 60px 52px 60px;
   z-index: 10;
+  @media screen and (max-width:950px){
+    display: none;
+  }
 `
 const Header = styled.div`
   display: flex;

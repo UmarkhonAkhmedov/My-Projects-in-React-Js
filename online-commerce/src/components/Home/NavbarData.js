@@ -97,6 +97,9 @@ const Container = styled.div`
   @media screen and (min-width:1400px){
     padding: 32px 50px 32px 88px;
   }
+  @media screen and (max-width:950px){
+    display: none;
+  }
 `
 const Top = styled.div`
   display: flex;
